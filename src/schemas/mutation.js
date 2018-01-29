@@ -10,10 +10,9 @@ import {PersonModel} from './../model/person';
 import {UserModel} from './../model/user';
 import {ReceitaModel} from './../model/receita';
 
-const Mutation = new GraphQLObjectType(
-    {
+const Mutation = new GraphQLObjectType({
         name: 'Mutation',
-        fields: {
+        fields:()=> ({
             addPerson: {
                 type: RootResponse,
                 args: {
@@ -57,7 +56,7 @@ const Mutation = new GraphQLObjectType(
                 }
             },
             addReceita:{
-                type:Receita,
+                type:   ,
                  args:{
                      nomeID:{ type: new GraphQLNonNull(GraphQLString) },
                      loteID:{ type: new GraphQLNonNull(GraphQLString) },
@@ -84,7 +83,6 @@ const Mutation = new GraphQLObjectType(
                  }
             }
         }
-    } 
-    
+    )}    
 )
 module.exports =  Mutation ;

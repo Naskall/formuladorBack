@@ -1,8 +1,5 @@
 import { GraphQLObjectType, GraphQLString, GraphQLInt } from 'graphql';
 
-
-
-
 const User = new GraphQLObjectType({
     name: 'User',
     fields: () => ({
@@ -10,7 +7,5 @@ const User = new GraphQLObjectType({
         type: { type: GraphQLString },
     })
 });
-
-
 
 module.exports =  User;

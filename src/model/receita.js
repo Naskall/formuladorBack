@@ -18,20 +18,24 @@ const Receita = mongoose.Schema ({
         required: true,
     },
     proporcao:{
-	type:Number,
-	required:true
+        type:Number,
+        required:true
     },
     concal:{
-	type:Number,
-	required:true	
+        type:Number,
+        required:true	
     },
     peso:{
         type:Number,
-	required:true
+	    required:true
      },
     custo:{
-	type:Number,
-	required:true
-	},	
+        type:Number,
+        required:true
+    },
+    observacao:{
+        type:String,
+        required:false
+    }	
 });
 module.exports = { ReceitaModel: mongoose.model('Receita', Receita) };

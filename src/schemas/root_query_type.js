@@ -1,5 +1,7 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql';
 import RootResponse from './person';
+import Receita from './receita';
+import User from './user';
 
 
 

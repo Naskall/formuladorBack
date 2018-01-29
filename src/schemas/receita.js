@@ -1,8 +1,8 @@
 import { GraphQLObjectType, GraphQLString, GraphQLInt } from 'graphql';
 
 
-const RootReceita = new GraphQLObjectType({
-    name: 'RootReceita',
+const Receita = new GraphQLObjectType({
+    name: 'Receita',
     fields: () => ({
         _id: { type: GraphQLString },
         nomeID: { type: GraphQLString },
@@ -11,9 +11,10 @@ const RootReceita = new GraphQLObjectType({
         proporcao:{ type: GraphQLString },
         concal:{ type: GraphQLString },
         peso:{ type: GraphQLString },
-        custo:{ type: GraphQLString }
+        custo:{ type: GraphQLString },
+        observacao:{type:GraphQLString}
     })
 });
 
 
-module.exports =  {RootReceita};
+module.exports =  Receita;
