@@ -16,7 +16,8 @@
     "graphql": "^0.11.7",
     "lodash": "^4.17.4",
     "moment": "^2.20.1",
-    "mongoose": "^4.13.7"
+    "mongoose": "^4.13.7",
+    "mongoose-unique-validator": "^1.0.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
